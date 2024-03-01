@@ -21,12 +21,12 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/msalihkarakasli/go-hms-push/push/authention"
-	"github.com/msalihkarakasli/go-hms-push/push/config"
+	"github.com/cossim/go-hms-push/push/authention"
+	"github.com/cossim/go-hms-push/push/config"
 	"reflect"
 
-	"github.com/msalihkarakasli/go-hms-push/httpclient"
-	"github.com/msalihkarakasli/go-hms-push/push/constant"
+	"github.com/cossim/go-hms-push/httpclient"
+	"github.com/cossim/go-hms-push/push/constant"
 )
 
 type HMSClient struct {
