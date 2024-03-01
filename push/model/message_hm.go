@@ -29,6 +29,11 @@ type AndroidConfig struct {
 	FastAppTarget int                  `json:"fast_app_target,omitempty"`
 	Data          string               `json:"data,omitempty"`
 	Notification  *AndroidNotification `json:"notification,omitempty"`
+
+	// TargetUserType 0=普通消息 1=测试消息 如果不设置可能会被频控
+	// https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/faq-0000001050042183#section196822541234
+	// https://developer.huawei.com/consumer/cn/doc/HMSCore-References/https-send-api-0000001050986197#ZH-CN_TOPIC_0000001700731289__p837521812163
+	TargetUserType int `json:"target_user_type,omitempty"`
 }
 
 type AndroidNotification struct {
